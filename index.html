@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання квитків</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <header>
+        <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+        <nav>
+            <ul>
+                <li><a href="#about-event" >Про подію</a> </li>
+                <li><a href="#tickets"> Квитки</a> </li>
+                <li><a href="#contact"></a> Контакти</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-event"> 
+            <h2>Про подію</h2> 
+            <р>Приєднуйтесь до незабутнього концерту вашої мрії. Ви сильно пожалієте якщо пропустите таке явище!</р>
+            <p><strong>Дата:</strong> 25 березня 2025 року</р>
+            <p><strong>Місце:</strong> Концертна зала "Україна", м. Київ</р>
+        </section>
+        <section id="tickets">
+            <h2>Квитки</h2>
+            <р>Виберіть тип квитка та заповніть форму бронювання:</р>
+            <form action="/submit-ticket" method="post">
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="standard" >Стандартний - 500 грн</option>
+                    <option value="vip">VIP - 1000 грн</option>
+                </select >
+                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required> 
+                <input type="email" id="email" name="email" placeholder="zhovanykdmytro@gmail.com" required>
+                <input type="tel" id="phone" name="phone" placeholder="+380662075519" required>
+                <button type="submit">Забронювати</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Контакти</h2>
+            <р>Звʼяжіться з нами, якщо маєте запитання: </р>
+            <address>
+                <p>Email: <a href="mailto:info@tickets.ua">info@tickets.ua</a></p>
+                <р>Телефон: <a href="tel:+380662075519">+380 66 207 55 19</a></p>
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>2025 Бронювання квитків. Усі права захищено, В разі їх порушення до вас приїде ФБР</p>
+    </footer>
+</body>
+</html>
